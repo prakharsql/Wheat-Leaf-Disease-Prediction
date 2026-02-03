@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheat Leaf Disease Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card fade-in">
+        <h1>🌾 Wheat Leaf Disease Detection</h1>
+        <p class="subtitle">AI-powered crop health analysis</p>
+
+        <label class="upload-box">
+            <input type="file" id="imageInput" accept="image/*" hidden>
+            <span>📤 Upload Wheat Leaf Image</span>
+        </label>
+
+        <div class="preview-container">
+            <img id="previewImage" />
+        </div>
+
+        <button onclick="predict()">🔍 Predict Disease</button>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="result-box">
+            <p id="result"></p>
+            <p id="treatment"></p>
+        </div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
